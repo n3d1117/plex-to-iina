@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81BEEDF325A5014E0024179F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEDF225A5014E0024179F /* AppDelegate.swift */; };
+		81BEEDF625A5014E0024179F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEDF425A5014E0024179F /* Main.storyboard */; };
+		81BEEDF825A5014E0024179F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEDF725A5014E0024179F /* ViewController.swift */; };
+		81BEEDFA25A501500024179F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEDF925A501500024179F /* Assets.xcassets */; };
+		81BEEE0125A501500024179F /* plex-to-iina Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81BEEE0025A501500024179F /* plex-to-iina Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81BEEE0625A501500024179F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BEEE0525A501500024179F /* Cocoa.framework */; };
+		81BEEE0925A501500024179F /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEE0825A501500024179F /* SafariExtensionHandler.swift */; };
+		81BEEE0B25A501500024179F /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEE0A25A501500024179F /* SafariExtensionViewController.swift */; };
+		81BEEE0E25A501500024179F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEE0D25A501500024179F /* script.js */; };
+		81BEEE1025A501500024179F /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEE0F25A501500024179F /* ToolbarItemIcon.pdf */; };
+		81BEEE1325A501500024179F /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEE1125A501500024179F /* SafariExtensionViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81BEEE0225A501500024179F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81BEEDE625A5014E0024179F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81BEEDFF25A501500024179F;
+			remoteInfo = "plex-to-iina Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81BEEE1B25A501500024179F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				81BEEE0125A501500024179F /* plex-to-iina Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		81BEEDEE25A5014E0024179F /* plex-to-iina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plex-to-iina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BEEDF125A5014E0024179F /* plex_to_iina.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = plex_to_iina.entitlements; sourceTree = "<group>"; };
+		81BEEDF225A5014E0024179F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81BEEDF525A5014E0024179F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81BEEDF725A5014E0024179F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81BEEDF925A501500024179F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81BEEDFB25A501500024179F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BEEE0025A501500024179F /* plex-to-iina Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "plex-to-iina Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BEEE0525A501500024179F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		81BEEE0825A501500024179F /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		81BEEE0A25A501500024179F /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		81BEEE0D25A501500024179F /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		81BEEE0F25A501500024179F /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		81BEEE1225A501500024179F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		81BEEE1425A501500024179F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BEEE1525A501500024179F /* plex_to_iina_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = plex_to_iina_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81BEEDEB25A5014E0024179F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BEEDFD25A501500024179F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BEEE0625A501500024179F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81BEEDE525A5014E0024179F = {
+			isa = PBXGroup;
+			children = (
+				81BEEDF025A5014E0024179F /* plex-to-iina */,
+				81BEEE0725A501500024179F /* plex-to-iina Extension */,
+				81BEEE0425A501500024179F /* Frameworks */,
+				81BEEDEF25A5014E0024179F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81BEEDEF25A5014E0024179F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81BEEDEE25A5014E0024179F /* plex-to-iina.app */,
+				81BEEE0025A501500024179F /* plex-to-iina Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81BEEDF025A5014E0024179F /* plex-to-iina */ = {
+			isa = PBXGroup;
+			children = (
+				81BEEDF125A5014E0024179F /* plex_to_iina.entitlements */,
+				81BEEDF225A5014E0024179F /* AppDelegate.swift */,
+				81BEEDF425A5014E0024179F /* Main.storyboard */,
+				81BEEDF725A5014E0024179F /* ViewController.swift */,
+				81BEEDF925A501500024179F /* Assets.xcassets */,
+				81BEEDFB25A501500024179F /* Info.plist */,
+			);
+			path = "plex-to-iina";
+			sourceTree = "<group>";
+		};
+		81BEEE0425A501500024179F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BEEE0525A501500024179F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81BEEE0725A501500024179F /* plex-to-iina Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81BEEE0825A501500024179F /* SafariExtensionHandler.swift */,
+				81BEEE0A25A501500024179F /* SafariExtensionViewController.swift */,
+				81BEEE1125A501500024179F /* SafariExtensionViewController.xib */,
+				81BEEE1425A501500024179F /* Info.plist */,
+				81BEEE1525A501500024179F /* plex_to_iina_Extension.entitlements */,
+				81BEEE0C25A501500024179F /* Resources */,
+			);
+			path = "plex-to-iina Extension";
+			sourceTree = "<group>";
+		};
+		81BEEE0C25A501500024179F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81BEEE0D25A501500024179F /* script.js */,
+				81BEEE0F25A501500024179F /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81BEEDED25A5014E0024179F /* plex-to-iina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81BEEE1C25A501500024179F /* Build configuration list for PBXNativeTarget "plex-to-iina" */;
+			buildPhases = (
+				81BEEDEA25A5014E0024179F /* Sources */,
+				81BEEDEB25A5014E0024179F /* Frameworks */,
+				81BEEDEC25A5014E0024179F /* Resources */,
+				81BEEE1B25A501500024179F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81BEEE0325A501500024179F /* PBXTargetDependency */,
+			);
+			name = "plex-to-iina";
+			productName = "plex-to-iina";
+			productReference = 81BEEDEE25A5014E0024179F /* plex-to-iina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81BEEDFF25A501500024179F /* plex-to-iina Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81BEEE1825A501500024179F /* Build configuration list for PBXNativeTarget "plex-to-iina Extension" */;
+			buildPhases = (
+				81BEEDFC25A501500024179F /* Sources */,
+				81BEEDFD25A501500024179F /* Frameworks */,
+				81BEEDFE25A501500024179F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "plex-to-iina Extension";
+			productName = "plex-to-iina Extension";
+			productReference = 81BEEE0025A501500024179F /* plex-to-iina Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81BEEDE625A5014E0024179F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					81BEEDED25A5014E0024179F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					81BEEDFF25A501500024179F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 81BEEDE925A5014E0024179F /* Build configuration list for PBXProject "plex-to-iina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81BEEDE525A5014E0024179F;
+			productRefGroup = 81BEEDEF25A5014E0024179F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81BEEDED25A5014E0024179F /* plex-to-iina */,
+				81BEEDFF25A501500024179F /* plex-to-iina Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81BEEDEC25A5014E0024179F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BEEDFA25A501500024179F /* Assets.xcassets in Resources */,
+				81BEEDF625A5014E0024179F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BEEDFE25A501500024179F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BEEE1325A501500024179F /* SafariExtensionViewController.xib in Resources */,
+				81BEEE1025A501500024179F /* ToolbarItemIcon.pdf in Resources */,
+				81BEEE0E25A501500024179F /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81BEEDEA25A5014E0024179F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BEEDF825A5014E0024179F /* ViewController.swift in Sources */,
+				81BEEDF325A5014E0024179F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BEEDFC25A501500024179F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BEEE0B25A501500024179F /* SafariExtensionViewController.swift in Sources */,
+				81BEEE0925A501500024179F /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81BEEE0325A501500024179F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81BEEDFF25A501500024179F /* plex-to-iina Extension */;
+			targetProxy = 81BEEE0225A501500024179F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81BEEDF425A5014E0024179F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81BEEDF525A5014E0024179F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81BEEE1125A501500024179F /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81BEEE1225A501500024179F /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81BEEE1625A501500024179F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81BEEE1725A501500024179F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		81BEEE1925A501500024179F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "plex-to-iina Extension/plex_to_iina_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y4562FZWB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "plex-to-iina Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.ned.plex-to-iina.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		81BEEE1A25A501500024179F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "plex-to-iina Extension/plex_to_iina_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y4562FZWB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "plex-to-iina Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.ned.plex-to-iina.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		81BEEE1D25A501500024179F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "plex-to-iina/plex_to_iina.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9Y4562FZWB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "plex-to-iina/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.ned.plex-to-iina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		81BEEE1E25A501500024179F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "plex-to-iina/plex_to_iina.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9Y4562FZWB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "plex-to-iina/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.ned.plex-to-iina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81BEEDE925A5014E0024179F /* Build configuration list for PBXProject "plex-to-iina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BEEE1625A501500024179F /* Debug */,
+				81BEEE1725A501500024179F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81BEEE1825A501500024179F /* Build configuration list for PBXNativeTarget "plex-to-iina Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BEEE1925A501500024179F /* Debug */,
+				81BEEE1A25A501500024179F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81BEEE1C25A501500024179F /* Build configuration list for PBXNativeTarget "plex-to-iina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BEEE1D25A501500024179F /* Debug */,
+				81BEEE1E25A501500024179F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81BEEDE625A5014E0024179F /* Project object */;
+}
