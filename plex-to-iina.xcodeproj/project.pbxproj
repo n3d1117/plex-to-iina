@@ -14,10 +14,9 @@
 		81BEEE0125A501500024179F /* plex-to-iina Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81BEEE0025A501500024179F /* plex-to-iina Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81BEEE0625A501500024179F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BEEE0525A501500024179F /* Cocoa.framework */; };
 		81BEEE0925A501500024179F /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEE0825A501500024179F /* SafariExtensionHandler.swift */; };
-		81BEEE0B25A501500024179F /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEE0A25A501500024179F /* SafariExtensionViewController.swift */; };
+		81BEEE0B25A501500024179F /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEEE0A25A501500024179F /* PopoverView.swift */; };
 		81BEEE0E25A501500024179F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEE0D25A501500024179F /* script.js */; };
 		81BEEE1025A501500024179F /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEE0F25A501500024179F /* ToolbarItemIcon.pdf */; };
-		81BEEE1325A501500024179F /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81BEEE1125A501500024179F /* SafariExtensionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +54,9 @@
 		81BEEE0025A501500024179F /* plex-to-iina Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "plex-to-iina Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BEEE0525A501500024179F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		81BEEE0825A501500024179F /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		81BEEE0A25A501500024179F /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		81BEEE0A25A501500024179F /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		81BEEE0D25A501500024179F /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		81BEEE0F25A501500024179F /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
-		81BEEE1225A501500024179F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		81BEEE1425A501500024179F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BEEE1525A501500024179F /* plex_to_iina_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = plex_to_iina_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				81BEEE0825A501500024179F /* SafariExtensionHandler.swift */,
-				81BEEE0A25A501500024179F /* SafariExtensionViewController.swift */,
-				81BEEE1125A501500024179F /* SafariExtensionViewController.xib */,
+				81BEEE0A25A501500024179F /* PopoverView.swift */,
 				81BEEE1425A501500024179F /* Info.plist */,
 				81BEEE1525A501500024179F /* plex_to_iina_Extension.entitlements */,
 				81BEEE0C25A501500024179F /* Resources */,
@@ -233,7 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81BEEE1325A501500024179F /* SafariExtensionViewController.xib in Resources */,
 				81BEEE1025A501500024179F /* ToolbarItemIcon.pdf in Resources */,
 				81BEEE0E25A501500024179F /* script.js in Resources */,
 			);
@@ -255,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81BEEE0B25A501500024179F /* SafariExtensionViewController.swift in Sources */,
+				81BEEE0B25A501500024179F /* PopoverView.swift in Sources */,
 				81BEEE0925A501500024179F /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,14 +273,6 @@
 				81BEEDF525A5014E0024179F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		81BEEE1125A501500024179F /* SafariExtensionViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81BEEE1225A501500024179F /* Base */,
-			);
-			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
