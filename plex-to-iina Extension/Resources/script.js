@@ -1,7 +1,7 @@
 // Constant classes
-const ACTION_BAR = "ActionButtonBar-bar-BSTmw2"
-const MENU_SCROLLER = "Menu-menuScroller-1TF6oW"
-const DESCENDANT_LIST = "PrePlayDescendantList-listContainer-3AH-PT"
+const ACTION_BAR = "ActionButtonBar-bar"
+const MENU_SCROLLER = "Menu-menuScroller"
+const DESCENDANT_LIST = "PrePlayDescendantList-listContainer"
 
 // Check at first load
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -28,10 +28,10 @@ function check() {
 // Note: does not work for Music
 function checkInject(callback) {
     // Get action bar
-    waitForElement('.' + ACTION_BAR).then(el => {
+    waitForElement(ACTION_BAR).then(el => {
         setTimeout(function() {
             // Media is playable if there's not a descendant list
-            callback(document.getElementsByClassName(DESCENDANT_LIST).length === 0);
+            callback(queryClasses(document, DESCENDANT_LIST).length === 0);
         }, 500);
     });
 }
@@ -40,7 +40,7 @@ function checkInject(callback) {
 function go() {
     
     // Get action bar
-    var el = document.getElementsByClassName(ACTION_BAR)[0];
+    var el = queryClasses(document, ACTION_BAR)[0];
     
     if (el.querySelector("#id-iina") == null) { // make sure we only add the custom button once
 
@@ -64,7 +64,7 @@ function go() {
             more_button.click();
             
             // Get the menu
-            waitForElement('.' + MENU_SCROLLER).then(menu => {
+            waitForElement(MENU_SCROLLER).then(menu => {
                 
                 // Get link and dispatch it to SafariExtensionHandler
                 var dl = menu.querySelector('[target="downloadFileFrame"]');
@@ -104,17 +104,21 @@ window.addEventListener('popstate',()=>{
 // Source: https://stackoverflow.com/a/61511955
 function waitForElement(selector) {
     return new Promise(resolve => {
-        if (document.querySelector(selector)) {
-            return resolve(document.querySelector(selector));
+        if (queryClasses(document, selector)[0]) {
+            return resolve(queryClasses(document, selector)[0]);
         }
         
         const observer = new MutationObserver(mutations => {
-            if (document.querySelector(selector)) {
-                resolve(document.querySelector(selector));
+            if (queryClasses(document, selector)[0]) {
+                resolve(queryClasses(document, selector)[0]);
                 observer.disconnect();
             }
         });
         
         observer.observe(document.body, { childList: true, subtree: true });
     });
+}
+
+function queryClasses(document, className) {
+    return document.querySelectorAll('[class^="' + className + '"],[class*=" ' + className + '"]')
 }
