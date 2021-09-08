@@ -46,6 +46,9 @@ function go() {
 
         // Get more button
         var more_button = el.querySelector('[data-qa-id="preplay-more"]');
+        if (more_button == null) {
+            more_button = el.querySelector('[data-testid="preplay-more"]');
+        }
 
         // Clone it
         var cloned = more_button.cloneNode(true);
