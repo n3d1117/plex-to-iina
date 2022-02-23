@@ -24,6 +24,8 @@ git clone https://github.com/n3d1117/plex-to-iina.git
 cd plex-to-iina/
 open plex-to-iina.xcodeproj
 ```
+
+* Optional: If you're using your own domain on your Plex server, please add that into `plex-to-iina/plex-to-iina Extension/Info.plist` and `NSExtension -> SFSafariWebsiteAccess -> AllowedDomains` section before building the project. 
 * Build and run the `plex-to-iina` scheme!
 
 **NOTE**: If you’re not part of the Apple Development Program, the extension might not show up in Safari Extensions preferences. To show it, you need to enable `Allow Unsigned Extensions` from the `Develop` menu.
